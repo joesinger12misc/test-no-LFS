@@ -1,14 +1,20 @@
-;,"2025 CEC Residential TDV ($) factors by climate zone, fuel and hour",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-;,Source:,,E3/JLandsman - 10/21/2022 - ,,,https://willdan.box.com/s/r3420a99kzs1ee8ire1l13q722brqsqp,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-;,,,,Version ID: 2022 TDV 8_pct_gas_cap,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+;,2025 Energy Code: Residential Systemwide Life Cycle Cost (SLCC) Hourly Factors,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+;,Source:,,https://www.energy.ca.gov/programs-and-topics/programs/building-energy-efficiency-standards/2025-building-energy-efficiency,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ;,Last modified:,,10/25/22 - SAC - created combined Res table from Res 30 yr tabs of:  2025_TDV_8_pct_gas_cap_20221020.xlsx,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+;,,,11/25/22 - RJ - nonsubstantive unit and presentation cleanup to match final factor tables published on 11/18/22,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+;,These hourly factors are used to convert predicted site energy use to long-term dollar costs to California's energy system. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+;,These hourly factors are not used for predicting utility bills. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+;,These hourly factors must be used with a computer program approved for demonstrating compliance with the 2025 Energy Code by the California Energy Commission.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+;,"These hourly factors are formatted to the 2009 calendar year, where January 3rd & 4th are the first weekend of the year.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+;,These hourly factors assume a 30-year period of analysis.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-;,For use with 2009 calendar year and updated CEC weather data,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+;,,Electricity SLCC,,,,,,,,,,,,,,,,Natural Gas SLCC,,,,,,,,,,,,,,,,Propane SLCC,,,,,,,,,,,,,,,
 ;,,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48
 ;,,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane
 ;,,$/kWh,$/kWh,$/kWh,$/kWh,$/kWh,$/kWh,$/kWh,$/kWh,$/kWh,$/kWh,$/kWh,$/kWh,$/kWh,$/kWh,$/kWh,$/kWh,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm,$/thrm
-TABLE 2025Res_TDVbyCZandFuel,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TABLE 2025Res_SLCCbyCZandFuel,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,MoDaHr,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV,TDV
 ,Fuel=,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,Elec,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,NatGas,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane,Propane
 ,CZ=,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
