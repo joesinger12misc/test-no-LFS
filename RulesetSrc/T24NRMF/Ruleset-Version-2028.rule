@@ -1,7 +1,7 @@
 // Ruleset - Version Information
 //
 // -------------------------------------------------------------------------
-//  Copyright (c) 2014-2022, California Energy Commission
+//  Copyright (c) 2014-2025, California Energy Commission
 //  All rights reserved.
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are
@@ -38,7 +38,7 @@ RULE Proj:CompManagerVersion
   DESCRIPTION
     "Version of Compliance Manager software"
   DEFAULT 
-    Format( "BEMCmpMgr 2025.1.0 RV (%g)", RuleRepoRev )
+    Format( "BEMCmpMgr 2028.0.1 RV (%g)", RuleRepoRev )
   SIZING
     u:CompManagerVersion
   ANNUAL
@@ -62,7 +62,7 @@ RULE Proj:AnalysisVersion
   DESCRIPTION
     "Version ID of analysis, enabling rule logic to be sensitive to analysis version"
   DEFAULT 
-    250099
+    280001
 ENDRULE
 ;    220200
 
@@ -90,7 +90,7 @@ RULE NEW Proj:EngyCodeYearNum
   INPUTCLASS
     Prescribed
   DEFAULT 
-    2025
+    2028
   SIZING
     u:EngyCodeYearNum
   ANNUAL
@@ -103,7 +103,7 @@ RULE NEW Proj:EngyCodeYear
   INPUTCLASS
     Prescribed
   DEFAULT 
-    "2025"
+    "2028"
   SIZING
     u:EngyCodeYear
   ANNUAL
@@ -281,87 +281,4 @@ RULE NEW Proj:UtilRateDownloadContainer
     u:UtilRateDownloadContainer
 ENDRULE
 ; was:    "30sp2"
-
-
-////////////////////////////////////////////////////////////////////////////////
-// moved older settings not used in XML-schema-based report gen down here - SAC 07/03/23
-
-// removed old settings used for AnalysisResults.xml reporting - SAC 01/20/25
-// RULE NEW Proj:RptGenCompReport
-//   DESCRIPTION
-//     "Name of compliance report to be populated following analysis"
-//   INPUTCLASS
-//     Prescribed
-//   DEFAULT 
-//     "NRCC_PRF_0119"
-//   SIZING
-//     u:RptGenCompReport
-//   ANNUAL
-//     u:RptGenCompReport
-// ENDRULE
-// 
-// RULE NEW Proj:RptGenStdReport
-//   DESCRIPTION
-//     "Name of standard model report"
-//   INPUTCLASS
-//     Prescribed
-//   DEFAULT 
-//     "NRCC_STD_0119"
-//   SIZING
-//     u:RptGenStdReport
-//   ANNUAL
-//     u:RptGenStdReport
-// ENDRULE
-// 
-// RULE NEW Proj:RptGenServer
-//   DESCRIPTION
-//     "URL of the web server that generates the compliance report"
-//   INPUTCLASS
-//     Prescribed
-//   DEFAULT 
-//     "cf6r.com"
-//   SIZING
-//     u:RptGenServer
-//   ANNUAL
-//     u:RptGenServer
-// ENDRULE
-// 
-// RULE NEW Proj:RptGenApp
-//   DESCRIPTION
-//     "Name of the web server application used in generating the compliance report"
-//   INPUTCLASS
-//     Prescribed
-//   DEFAULT 
-//     "ReportGeneratorCom2022_SVN"
-//   SIZING
-//     u:RptGenApp
-//   ANNUAL
-//     u:RptGenApp
-// ENDRULE
-// 
-// RULE NEW Proj:RptGenService
-//   DESCRIPTION
-//     "Name of the web service used in generating the compliance report"
-//   INPUTCLASS
-//     Prescribed
-//   DEFAULT 
-//     "ReportGeneratorService.svc"
-//   SIZING
-//     u:RptGenService
-//   ANNUAL
-//     u:RptGenService
-// ENDRULE
-// 
-// RULE NEW Proj:RptGenCheckURL
-//   DESCRIPTION
-//     "URL used to check the status of the report generator website/server"
-//   INPUTCLASS
-//     Prescribed
-//   DEFAULT 
-//     "https://cf6r.com/RGServiceStatus_2.0/RGServiceStatus.svc/IsComServiceActive"
-//   SIZING
-//     u:RptGenCheckURL
-//   ANNUAL
-//     u:RptGenCheckURL
-// ENDRULE
 
